@@ -24,7 +24,7 @@ defmodule People.Person do
   end
 
   defimpl Inspect do
-    def inspect(%Person{first_name: first_name, last_name: last_name, location: location}, _) do
+    def inspect(%{first_name: first_name, last_name: last_name, location: location}, _) do
       "Person[#{first_name} #{last_name}, #{location}]"
     end
   end
