@@ -29,3 +29,8 @@ defmodule People.Person do
     end
   end
 end
+
+# * Nota:Elixir.Access
+
+# .exs files are meant to be used in an interactive shell and are not compiled
+# .ex files , however, are compiled and added to the build folder
