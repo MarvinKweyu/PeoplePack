@@ -31,6 +31,18 @@ defmodule People.Person do
     "#{person.first_name} #{person.last_name}"
   end
 
+
+  @doc """
+  Calculates a person's age given their birth year in the format: yyyy-mm-dd
+
+  ## Examples
+
+  iex> birdy = %Person{first_name: "Ryan", birthday: Date.from_iso8601!("2000-01-01")}
+  iex> birdy |> Person.age
+  22.379192334017795
+
+  """
+
   def age(%__MODULE__{} = person) do
     days = Date.diff(Date.utc_today(), person.birthday)
     days / 365.25

@@ -13,6 +13,12 @@ To enable routes, run the below on the shell that ensues:
 Plug.Cowboy.http People.Router, []
 ```
 
+## Running tests
+
+```bash
+mix test
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
