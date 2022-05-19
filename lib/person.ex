@@ -31,7 +31,6 @@ defmodule People.Person do
     "#{person.first_name} #{person.last_name}"
   end
 
-
   @doc """
   Calculates a person's age given their birth year in the format: yyyy-mm-dd
 
