@@ -6,7 +6,7 @@ defmodule People.Router do
 
   get("hello/:name", to: People.Hello)
   get("goodbye/:name", to: People.Goodbye)
-  get("birthday/:year", to: People.Birthday)
+  get("birthday/:birthday", to: People.Birthday)
 
   match _ do
     send_resp(conn, 404, "there is nothing here you creep!")

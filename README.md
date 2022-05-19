@@ -2,6 +2,17 @@
 
 A people mix project
 
+
+To run
+```bash
+iex -S mix
+```
+
+To enable routes, run the below on the shell that ensues:
+```bash
+Plug.Cowboy.http People.Router, []
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
