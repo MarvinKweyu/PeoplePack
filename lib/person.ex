@@ -1,8 +1,27 @@
 defmodule People.Person do
+  @moduledoc """
+  Documentation for Person
+  """
   defstruct first_name: nil,
             last_name: nil,
             birthday: nil,
             location: "home"
+
+  @doc """
+  Joins together a person's first name and last name
+  If that person only has a first name, it shows only that name
+
+  ## Examples
+
+  iex> ryan = %Person{first_name: "Ryan", last_name: "Bigg"}
+  iex> ryan |> Person.full_name
+  "Ryan Bigg"
+
+  iex> madonna = %Person{first_name: "Madonna"}
+  iex> madonna |> Person.full_name
+  "Madonna"
+
+  """
 
   def full_name(%__MODULE__{first_name: first_name, last_name: nil}) do
     "#{first_name}"
