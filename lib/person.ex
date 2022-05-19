@@ -4,6 +4,10 @@ defmodule People.Person do
             birthday: nil,
             location: "home"
 
+  def full_name(%__MODULE__{first_name: first_name, last_name: nil}) do
+    "#{first_name}"
+  end
+
   def full_name(%__MODULE__{} = person) do
     "#{person.first_name} #{person.last_name}"
   end
