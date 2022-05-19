@@ -1,5 +1,7 @@
 # People
 
+![Test workflow](https://github.com/MarvinKweyu/PeoplePack/actions/workflows/elixir.yml/badge.svg?branch=main)
+
 A people mix project
 
 
