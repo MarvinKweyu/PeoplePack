@@ -31,6 +31,6 @@ defmodule People.PersonTest do
   test "age/1 " do
     random_user = %Person{first_name: "random", birthday: Date.from_iso8601!("2000-01-01")}
 
-    assert random_user |> Person.age() === 22.379192334017795
+    assert random_user |> Person.age() === 22
   end
 end

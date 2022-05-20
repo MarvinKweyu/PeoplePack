@@ -38,13 +38,13 @@ defmodule People.Person do
 
   iex> birdy = %Person{first_name: "Ryan", birthday: Date.from_iso8601!("2000-01-01")}
   iex> birdy |> Person.age
-  22.379192334017795
+  22
 
   """
 
   def age(%__MODULE__{} = person) do
     days = Date.diff(Date.utc_today(), person.birthday)
-    days / 365.25
+    trunc(days / 365.25)
   end
 
   # ensure Person structs are parsed to the functions
